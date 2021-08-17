@@ -1,0 +1,6 @@
+{
+    "vim.useCtrlKeys": false,
+    "files.associations": {
+        "iostream": "cpp"
+    }
+}
