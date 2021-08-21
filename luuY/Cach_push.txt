@@ -5,5 +5,5 @@ git status
 git commit -m " commit vào " 
 git log         // để xem có commit được chưa
 git remote add origin https://github.com/ThanTranNghiep/DanhSachLienKetDon.git          // Đồng bộ file của máy với trên mạng
-git remote set-url origin https://github.com/ThanTranNghiep/ThanNghiep_project.git    // nếu dòng trên gặp lỗi thì dùng này
+git remote set-url origin https://github.com/ThanTranNghiep/DanhSachLienKetDon.git    // nếu dòng trên gặp lỗi thì dùng này
 git push -u origin master       // Úp data từ máy lên github
