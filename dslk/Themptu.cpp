@@ -36,14 +36,6 @@ void addTail(List &l,Node *x){
     l.tail->next=x;
     l.tail=x;
 }
-void addNode(List &l,Node *x,int pos){
-    Node *i=l.head;
-    for(int j=1;j<pos;j++){
-        i=i->next;
-    }
-    x->next=i->next;
-    i->next=x;
-}
 void AddNode(List &l,Node*x,int n,int pos){
     if(l.head==NULL){
         l.head=l.tail=x;
@@ -55,6 +47,7 @@ void AddNode(List &l,Node*x,int n,int pos){
     }
     if(pos <=0 || pos > n){
         cout<<"\nError !\n";
+        return;
     }
     Node *j=l.head;
     for(int i=1;i<pos-1;i++){
@@ -88,5 +81,8 @@ int main(){
         addTail(l,a);
     }
     Display(l);
-    
+    cout<<endl;
+    Node*a=CreateNode(3);
+    AddNode(l,a,n,3);   // add node a=3 vào vị trí 3
+    Display(l);
 }
