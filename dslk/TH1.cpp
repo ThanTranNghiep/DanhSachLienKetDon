@@ -60,7 +60,8 @@ int main(){
         addtail(l,a);
     }
     for(Node *i=l.head;i!=NULL;i=i->next){
-        cout<<i->Data<<" ";
+        // cout<<i->Data<<" ";
+        printf("%4d",i->Data);
     }
     printf("\n");
     Node *b= createNode(12);
